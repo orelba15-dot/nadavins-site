@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>נדב סוכנות לביטוח | ביטוח רכב, דירה, בריאות, עסקים ותכנון פיננסי</title>
+<meta name="description" content="סוכנות ביטוח עצמאית בקריית ביאליק. ביטוח רכב, דירה, בריאות, חיים ופנסיה וביטוח לעסק. שיחה אחת ללא התחייבות: 073-279-1289.">
+<meta name="format-detection" content="telephone=no">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;800;900&display=swap" rel="stylesheet">
+
+<!-- Google tag (Google Ads account 407-690-3909) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18564032521"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18564032521');
+
+  // "Calls from website": Google swaps the number below for a forwarding
+  // number for visitors who came from an ad. A call of 30 s or more counts.
+  gtag('config', 'AW-18564032521/LdZ-CI3Q2bYdEInQgpRF', {
+    'phone_conversion_number': '073-279-1289'
+  });
+
+  // "Click to call (website)", secondary: any tap on a call link.
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest ? e.target.closest('a[href^="tel:"]') : null;
+    if (!a) return;
+    gtag('event', 'conversion', {
+      'send_to': 'AW-18564032521/Sr2dCJDQ2bYdEInQgpRF',
+      'value': 1.0,
+      'currency': 'ILS'
+    });
+  });
+</script>
+
+<style>
+  :root {
+    --navy: #12233d;
+    --navy-2: #1b3358;
+    --amber: #f3b244;
+    --amber-dark: #e09a22;
+    --ink: #16243a;
+    --muted: #55627a;
+    --line: #e3e9f2;
+    --tint: #e8f0fa;
+    --bg: #ffffff;
+    --soft: #f6f8fb;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Heebo", "Assistant", "Segoe UI", "Noto Sans Hebrew", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.55;
+    padding-bottom: 84px; /* room for the fixed call bar on phones */
+  }
+  a { color: inherit; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
+
+  /* Call buttons */
+  .call {
+    display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+    background: var(--amber); color: var(--navy);
+    font-weight: 800; text-decoration: none;
+    border-radius: 14px; padding: 14px 22px;
+    box-shadow: 0 6px 18px rgba(243, 178, 68, .35);
+    transition: background .15s, transform .15s;
+  }
+  .call:hover { background: var(--amber-dark); }
+  .call:active { transform: scale(.98); }
+  .call svg { width: 22px; height: 22px; flex: none; }
+  .call .phone-number { direction: ltr; unicode-bidi: isolate; white-space: nowrap; }
+  .call-big { width: 100%; font-size: clamp(17px, 5.6vw, 22px); padding: 18px 12px; border-radius: 16px; }
+  .call-big svg { width: 26px; height: 26px; }
+
+  /* Header */
+  header { background: #fff; border-bottom: 1px solid var(--line); }
+  .head { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 16px; }
+  .brand { display: flex; align-items: center; gap: 12px; min-width: 0; }
+  .brand img { height: 46px; width: auto; display: block; }
+  .brand span { font-weight: 800; font-size: 16px; white-space: nowrap; }
+  .head .call { display: none; }
+
+  /* Hero */
+  .hero {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy) 55%, var(--navy-2) 100%);
+    color: #fff; padding: 28px 0 30px;
+  }
+  .hero h1 { font-size: 30px; line-height: 1.2; margin: 0 0 12px; font-weight: 900; letter-spacing: -.3px; }
+  .hero p.lead { margin: 0 0 20px; color: #d5deeb; font-size: 17px; }
+  .hero .hours { margin: 12px 0 0; color: #b9c6d9; font-size: 15px; text-align: center; }
+  .ticks { list-style: none; margin: 18px 0 0; padding: 0; display: grid; gap: 8px; color: #e7edf6; font-size: 16px; }
+  .ticks li { display: flex; gap: 8px; align-items: flex-start; }
+  .ticks svg { width: 20px; height: 20px; flex: none; margin-top: 3px; color: var(--amber); }
+
+  /* Numbers */
+  .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 12px; padding: 26px 16px; text-align: center; }
+  .stats b { display: block; font-size: 30px; font-weight: 900; color: var(--navy); direction: ltr; unicode-bidi: isolate; }
+  .stats span { color: var(--muted); font-size: 14px; }
+
+  /* Products */
+  .cards { display: grid; gap: 14px; padding: 4px 16px 8px; }
+  .card { border: 1px solid var(--line); border-radius: 18px; padding: 18px; background: #fff; box-shadow: 0 2px 10px rgba(18, 35, 61, .04); }
+  .card .top { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+  .card .ico { width: 44px; height: 44px; border-radius: 12px; background: var(--tint); color: #1f4f8a; display: grid; place-items: center; flex: none; }
+  .card .ico svg { width: 24px; height: 24px; }
+  .card h2 { margin: 0; font-size: 20px; font-weight: 800; }
+  .card p { margin: 0 0 12px; color: var(--muted); font-size: 16px; }
+  .card a.link { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; color: #1f4f8a; text-decoration: none; padding: 6px 0; }
+  .card a.link svg { width: 18px; height: 18px; }
+  .card a.link .phone-number { direction: ltr; unicode-bidi: isolate; white-space: nowrap; }
+
+  /* Insurers */
+  .insurers { padding: 26px 16px 8px; text-align: center; }
+  .insurers h3 { margin: 0 0 12px; font-size: 17px; font-weight: 800; }
+  .chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+  .chips span { border: 1px solid var(--line); background: var(--soft); border-radius: 999px; padding: 6px 14px; font-size: 15px; color: var(--muted); font-weight: 600; }
+
+  /* Closing band */
+  .closing { margin: 26px 16px 0; background: var(--navy); color: #fff; border-radius: 20px; padding: 24px 18px; text-align: center; }
+  .closing h3 { margin: 0 0 6px; font-size: 22px; font-weight: 900; }
+  .closing p { margin: 0 0 16px; color: #d5deeb; }
+
+  footer { padding: 22px 16px 8px; text-align: center; color: var(--muted); font-size: 14px; }
+
+  /* Fixed call bar (phones) */
+  .bar {
+    position: fixed; inset-inline: 0; bottom: 0; z-index: 20;
+    background: rgba(255, 255, 255, .96); backdrop-filter: blur(8px);
+    border-top: 1px solid var(--line);
+    padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+  }
+  .bar .call { width: 100%; font-size: clamp(15px, 5vw, 20px); padding: 15px 8px; gap: 8px; white-space: nowrap; }
+
+  /* Wider screens */
+  @media (min-width: 800px) {
+    body { padding-bottom: 0; font-size: 18px; }
+    .bar { display: none; }
+    .head { padding: 14px 16px; }
+    .head .call { display: inline-flex; }
+    .brand img { height: 58px; }
+    .brand span { font-size: 22px; }
+    .hero { padding: 64px 0 68px; }
+    .hero .inner { max-width: 760px; }
+    .hero h1 { font-size: 52px; }
+    .hero p.lead { font-size: 20px; }
+    .call-big { width: auto; font-size: 24px; padding: 18px 34px; }
+    .hero .hours { text-align: start; }
+    .ticks { grid-template-columns: repeat(3, auto); justify-content: start; gap: 8px 28px; }
+    .stats { grid-template-columns: repeat(4, 1fr); padding: 40px 16px; }
+    .stats b { font-size: 40px; }
+    .stats span { font-size: 16px; }
+    .cards { grid-template-columns: 1fr 1fr; gap: 20px; }
+    .card { padding: 26px; }
+    .closing { margin-top: 40px; padding: 40px 24px; }
+    .closing .call-big { width: auto; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap head">
+    <div class="brand">
+      <img src="logo.png" alt="נדב סוכנות לביטוח" width="80" height="46">
+      <span>איתכם ברגע האמת.</span>
+    </div>
+    <a class="call" href="tel:073-279-1289" data-pos="header">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z"/></svg>
+      התקשרו עכשיו: <span class="phone-number">073-279-1289</span>
+    </a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap"><div class="inner">
+      <h1>סוכנות ביטוח שעובדת בשבילכם, לא בשביל חברות הביטוח</h1>
+      <p class="lead">ביטוח רכב, דירה, בריאות, חיים ופנסיה וביטוח לעסק. שיחה אחת ללא התחייבות, השוואה בין מגוון פוליסות והתאמה אישית.</p>
+      <a class="call call-big" href="tel:073-279-1289" data-pos="hero">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z"/></svg>
+        התקשרו: <span class="phone-number">073-279-1289</span>
+      </a>
+      <p class="hours">ראשון עד חמישי, 8:00 עד 16:00</p>
+      <ul class="ticks">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>שיחה ללא התחייבות</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>השוואה בין חברות הביטוח</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>ליווי צמוד בתביעות</li>
+      </ul>
+    </div></div>
+  </section>
+
+  <section class="wrap stats" aria-label="הסוכנות במספרים">
+    <div><b>11</b><span>שנות ניסיון</span></div>
+    <div><b>48</b><span>אנשי צוות שעובדים בשבילכם</span></div>
+    <div><b>+11,400</b><span>לקוחות מרוצים</span></div>
+    <div><b>+1,180</b><span>תביעות שניהלנו</span></div>
+  </section>
+
+  <section class="wrap cards" aria-label="תחומי הביטוח">
+    <article class="card">
+      <div class="top">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 13l2-5a2 2 0 0 1 1.9-1.3h10.2A2 2 0 0 1 19 8l2 5v4a1 1 0 0 1-1 1h-1a2 2 0 0 1-4 0H9a2 2 0 0 1-4 0H4a1 1 0 0 1-1-1v-4z"/><path d="M3 13h18"/></svg></div>
+        <h2>ביטוח רכב</h2>
+      </div>
+      <p>מקיף, צד ג' וחובה, גם לנהג צעיר. כיסוי לגרירה, שמשות ורכב חלופי. משווים בין חברות הביטוח ונותנים הצעת מחיר בשיחה אחת, עם ליווי צמוד בתביעות.</p>
+      <a class="link call-link" href="tel:073-279-1289" data-pos="car">להצעת מחיר לרכב: <span class="phone-number">073-279-1289</span></a>
+    </article>
+
+    <article class="card">
+      <div class="top">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11l8-7 8 7v8a1 1 0 0 1-1 1h-4v-6h-6v6H5a1 1 0 0 1-1-1v-8z"/></svg></div>
+        <h2>ביטוח דירה</h2>
+      </div>
+      <p>מבנה ותכולה בפוליסה אחת: קירות, מערכות, חלונות ודלתות, ריהוט, מכשירי חשמל ותכשיטים. הגנה מפני אש, נזקי מזג אוויר, הצפות ופריצה.</p>
+      <a class="link call-link" href="tel:073-279-1289" data-pos="home">להצעת מחיר לדירה: <span class="phone-number">073-279-1289</span></a>
+    </article>
+
+    <article class="card">
+      <div class="top">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.2 7.9-8 9-4.800-1.100-8-4.500-8-9V6l8-3z"/><path d="M12 15.500s-3-1.800-3-4a1.700 1.700 0 0 1 3-1 1.700 1.700 0 0 1 3 1c0 2.200-3 4-3 4z"/></svg></div>
+        <h2>בריאות, חיים ופנסיה</h2>
+      </div>
+      <p>ביטוח בריאות, ביטוח מחלות קשות, קרן פנסיה וביטוח מנהלים. כיסוי לניתוחים ותרופות שאינן בסל, וביטחון כלכלי לכם ולמשפחה.</p>
+      <a class="link call-link" href="tel:073-279-1289" data-pos="health">לבדיקת ביטוחים: <span class="phone-number">073-279-1289</span></a>
+    </article>
+
+    <article class="card">
+      <div class="top">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg></div>
+        <h2>ביטוח לעסק</h2>
+      </div>
+      <p>ביטוח מבנה ותכולה לעסק ולמשרד, מותאם לסוג הפעילות שלכם.</p>
+      <a class="link call-link" href="tel:073-279-1289" data-pos="business">להצעת מחיר לעסק: <span class="phone-number">073-279-1289</span></a>
+    </article>
+  </section>
+
+  <section class="insurers">
+    <h3>עובדים עם החברות המובילות בשוק</h3>
+    <div class="chips">
+      <span>כלל</span><span>הראל</span><span>הפניקס</span><span>מנורה מבטחים</span><span>מגדל</span><span>הכשרה</span>
+    </div>
+  </section>
+
+  <section class="closing">
+    <h3>שיחה אחת, והביטוח מסודר</h3>
+    <p>אנחנו סוכנות ביטוח עצמאית בקריית ביאליק. מתקשרים, ואנחנו משווים בשבילכם.</p>
+    <a class="call call-big" href="tel:073-279-1289" data-pos="closing">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z"/></svg>
+      <span class="phone-number">073-279-1289</span>
+    </a>
+  </section>
+</main>
+
+<footer>
+  נדב סוכנות לביטוח · קריית ביאליק<br>ראשון עד חמישי, 8:00 עד 16:00
+</footer>
+
+<div class="bar">
+  <a class="call" href="tel:073-279-1289" data-pos="bar">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z"/></svg>
+    התקשרו עכשיו: <span class="phone-number">073-279-1289</span>
+  </a>
+</div>
+
+</body>
+</html>
